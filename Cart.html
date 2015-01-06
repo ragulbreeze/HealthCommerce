@@ -1,0 +1,405 @@
+ <!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>BucketAdmin</title>
+    <!--Core CSS -->
+    <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="js/jquery-ui/jquery-ui-1.10.1.custom.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reset.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="js/jvector-map/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+    <link href="css/clndr.css" rel="stylesheet">
+    <!--clock css-->
+    <link href="js/css3clock/css/style.css" rel="stylesheet">
+    <!--Morris Chart CSS -->
+    <link rel="stylesheet" href="js/morris-chart/morris.css">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet"/>
+	
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]>
+    <script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	<style>
+	    .border{border:1px solid red;}
+		.button, input, optgroup, select, textarea{color:#000;}
+		.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{background-color:#fff;}
+		.img-pre{background:url('images/m4.png') no-repeat;background-size:80% 100%;height:500px;}
+		.add-cart{padding-top:15px;}
+		.padding{padding-top:30px;}
+		 hr{background-color:#ddd;height:1px;border:none;}
+		 .fa-star.inbox-started, .fa-star:hover{color:#f78a09;}
+		 div.row{margin:0;}
+	</style>
+</head>
+ <body>
+<section id="container">
+	<div class="top-nav">
+		<!--search & user info start-->
+		<ul class="nav pull-right top-menu">
+			<li><a href="login.html"><i class="fa fa-sign-in"></i>&nbsp Sign in / Register</a></li>
+			<li><a href="#">Wish list: 2 items</li>
+			<li><a href="#">cart: 3 items</li>
+		</ul>
+	</div>
+	
+	<section class="wrapper">
+		<div class="row">
+		<nav class="navbar navbar-inverse" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="container">
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="index.html"><b>HOME</b></a></li>
+							<li><a href="#"><b>ABOUT US</b></a></li>
+							<li class="dropdown">
+								<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><b>SHOP</b></a>
+								<ul class="dropdown-menu container" style="margin-left:-201px;">
+									<li class="col-xs-6 col-sm-4 col-md-4"><a href="category.html"><b>Clothing</b></a>
+										<ul>
+											<li><a href="#">Dresses</a></li>
+											<li><a href="#">Jeans &amp; Trousers</a></li>
+											<li><a href="#">Blouses &amp; Shirts</a></li>
+											<li><a href="#">Tops &amp; T-Shirts</a></li>
+											<li><a href="#">Jackets &amp; Coats</a></li>
+											<li><a href="#">Skirts</a></li>
+										</ul>
+									</li>
+									<li class="col-xs-6 col-sm-4 col-md-4">
+										<a href="category.html"><b>Shoes</b></a>
+										<ul>
+											<li><a href="#">Formal Shoes</a></li>
+											<li><a href="#">Casual Shoes</a></li>
+											<li><a href="#">Sandals</a></li>
+											<li><a href="#">Boots</a></li>
+											<li><a href="#">Wide Fit</a></li>
+											<li><a href="#">Slippers</a></li>
+										</ul>
+									</li>
+									<li class="col-xs-6 col-sm-4 col-md-4">
+										<a href="category.html"><b>Accessories</b></a>
+										<ul>
+											<li><a href="#">Bags &amp; Purses</a></li>
+											<li><a href="#">Belts</a></li>
+											<li><a href="#">Gloves</a></li>
+											<li><a href="#">Jewellery</a></li>
+											<li><a href="#">Sunglasses</a></li>
+											<li><a href="#">Hair Accessories</a></li>
+										</ul>
+									</li>
+									<li class="col-xs-6 col-sm-4 col-md-4">
+										<a href="category.html"><b>Sports</b></a>
+										<ul>
+											<li><a href="#">Sport Tops &amp; Vests</a></li>
+											<li><a href="#">Swimwear</a></li>
+											<li><a href="#">Footwear</a></li>
+											<li><a href="#">Sports Underwear</a></li>
+											<li><a href="#">Bags</a></li>
+										</ul>
+									</li>													
+									<li class="col-xs-6 col-sm-4 col-md-4">
+										<a href="category.html"><b>Maternity</b></a>
+										<ul>
+											<li><a href="#">Tops &amp; Skirts</a></li>
+											<li><a href="#">Dresses</a></li>
+											<li><a href="#">Trousers &amp; Shorts</a></li>
+											<li><a href="#">Knitwear</a></li>
+											<li><a href="#">Jackets &amp; Coats</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="checkout.html"><b>CHECKOUT</b></a></li>
+							<li><a href="Cart.html"><b>CART</b></a></li>
+							<li><a href="contactus.html"><b>CONTACT US</b></a></li>						
+						</ul>
+						<ul class="nav pull-right top-menu">
+							<li>
+								<input type="text" class="form-control search" placeholder=" Search">
+							</li>
+						</ul>
+					</div>
+				</div>
+            </nav>
+		</div>
+    </section>
+<ul class="breadcrumb">
+	<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+	<li><a href="#">Home</a></li>
+	<li class="active">Product-Cart</li>
+</ul>
+<div class="row">
+	<div class="col-sm-6 img-pre"></div>
+	<div class="col-sm-6">
+		<h1>Duis egestas</h1>
+		<p>Articul: AA3476BC</p>
+		<div class="row">
+			<div class="col-sm-4">	
+				<p><b>SIZE</b></p>
+				<select class="form-control" id="source">
+					<optgroup label="Choose size">
+						<option value="AK">S - small</option>
+						<option value="HI">M - medium</option>
+						<option value="3">L - large</option>
+						<option value="4">XL - extra large</option>
+					</optgroup>
+				</select>
+			</div>
+			<div class="col-sm-4">
+				<p><b>COLOR</b></p>
+				<select class="form-control" id="source">
+					<optgroup label="Choose color">
+						<option value="1">Brown</option>
+						<option value="2">Grey</option>
+						<option value="3">Black</option>
+					</optgroup>
+				</select>
+			</div>
+			<div class="col-sm-4">
+				<p><b>QTY</b></p>
+				<div id="spinner1">
+					<div class="input-group input-small">
+						<input type="text" class="spinner-input form-control" maxlength="3" readonly>
+						<div class="spinner-buttons input-group-btn btn-group-vertical">
+							<button type="button" class="btn spinner-up btn-xs btn-default">
+								<i class="fa fa-angle-up"></i>
+							</button>
+							<button type="button" class="btn spinner-down btn-xs btn-default">
+								<i class="fa fa-angle-down"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-sm-4">
+				<h1><b>$120</b></h1>
+			</div>
+			<div class="col-sm-4 add-cart">
+				<button type="button" class="btn btn-danger btn-lg">Add to cart</button>
+			</div>
+			<div class="col-sm-4 padding">
+				<a href="#"><i class="fa fa-heart"></i>Add to wish list</a>
+			</div>
+		</div><br>
+		<p><b>SHARE:</b>
+		<a href="#facebook-square"><i class="fa fa-facebook-square"></i></a>&nbsp
+		<a href="#twitter"><i class="fa fa-twitter"></i></a>&nbsp
+		<a href="#google-plus-square"><i class="fa fa-google-plus-square"></i></a>&nbsp
+		<a href="#pinterest-square"><i class="fa fa-pinterest-square"></i></a></p>
+		<section class="panel">
+			<header class="panel-heading tab-bg-dark-navy-blue ">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a data-toggle="tab" href="#home">Overview</a>
+					</li>
+					<li class="">
+						<a data-toggle="tab" href="#about">Reviews</a>
+					</li>
+				</ul>
+			</header>
+			<div class="panel-body">
+				<div class="tab-content">
+					<div id="home" class="tab-pane active">
+						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+						<p>Pellentesque et est aliquet elit dignissim lacinia nec id lorem. Nunc non dui odio. Vivamus mi quam, iaculis in mi ut, facilisis pharetra metus. Sed porta justo purus, at ullamcorper neque porttitor.</p>
+					</div>
+					<div id="about" class="tab-pane">
+						<p><strong>John Woo:</strong> Great stuff! I really happy with it!</p>
+						<div class="quality">Quality&nbsp; <i class="fa fa-star inbox-started"></i><i class="fa fa-star inbox-started"></i><i class="fa fa-star inbox-started"></i><i class="fa fa-star inbox-started"></i><i class="fa fa-star"></i></div>
+						<hr>
+						<p><strong>Nick:</strong> Maecenas est mauris, rhoncus ut erat id, congue malesuada enim. Nulla ullamcorper non lorem eget iaculis. Fusce at mauris ac libero accumsan congue.</p>
+						<div class="quality">Quality&nbsp; <i class="fa fa-star inbox-started"></i><i class="fa fa-star inbox-started"></i><i class="fa fa-star inbox-started"></i><i class="fa fa-star inbox-started"></i><i class="fa fa-star"></i></div>
+						<hr>
+						<div class=" form">
+							<form class="cmxform form-horizontal " id="commentForm" method="get" action="">
+								<div class="form-group ">
+									<div class="col-lg-8">
+										<input class=" form-control" id="cname" name="name" minlength="2" type="text" placeholder="Nickname" />
+									</div>
+								</div>
+								<div class="form-group ">
+									<div class="col-lg-8">
+										<textarea class="form-control " id="ccomment" name="comment" placeholder="Text of the review"></textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-lg-8">
+										<div class="quality">Quality&nbsp; <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+										<button class="btn btn-danger pull-right" type="submit">Add review</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+<footer class="footer-section">
+			<div class="container">
+			<div class="row"> 	 	
+				<div class="col-md-3">
+					<!-- secondary phone -->
+					<div class="secondary-phone">
+						<p>Feel free to call us</p>
+						<p>900 387 0003</p>
+						<i class="icon-comment"></i>
+					</div>	
+									
+					<!--/ secondary phone -->
+					
+					<!-- info nav -->
+					<ul class="info-nav">
+						<li>General</li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Size charts</a></li>
+						<li><a href="#">Return and delivery</a></li>
+					</ul>
+					<!--/ info nav -->
+					
+					<!-- copyrights -->
+					<div class="copyrights">© 2015 Health Plotter <br>All rights reserved</div>
+					<!--/ copyrights -->
+				</div>
+				
+				<div class="col-md-3">
+					<!-- info nav -->
+					<ul class="info-nav">
+						<li>About us</li>
+						<li><a href="#">Company</a></li>
+						<li><a href="#">Career</a></li>
+						<li><a href="#">Terms and conditions</a></li>
+					</ul>
+					<!--/ info nav -->
+					
+					<!-- info nav -->
+					<ul class="info-nav">
+						<li>Contacts</li>
+						<li><a href="#">Subscription</a></li>
+						<li><a href="#">Shop finder</a></li>
+						<li><a href="#">Contacts information</a></li>
+					</ul>
+					<!--/ info nav -->
+				</div>
+				
+				<div class="col-md-3">
+					<!-- info nav -->
+					<ul class="info-nav">
+						<li>Collections</li>
+						<li><a href="#">Men spring-summer 2012</a></li>
+						<li><a href="#">Women spring-summer 2012</a></li>
+						<li><a href="#">Girls summer-autumn 2012</a></li>
+						<li><a href="#">Boys summer-autumn 2012</a></li>
+						<li><a href="#">Women autumn-winter 2013</a></li>
+						<li><a href="#">Men autumn-winter 2013</a></li>
+					</ul>
+					<!--/ info nav -->
+				</div>
+				
+				<div class="col-md-3">
+					<!-- social nav -->
+					<ul class="social-nav clearfix">
+						<li>Social</li>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+					</ul>
+					<!--/ social nav -->
+					
+					<!-- payment nav -->
+					<ul class="payment-nav">
+						<li>Payment</li>
+						<li><a href="#"><img src="img/payment-nav/mc.png" width="27" height="17" alt="MasterCard"></a></li>
+						<li><a href="#"><img src="img/payment-nav/maestro.png" width="27" height="17" alt="Maestro"></a></li>
+						<li><a href="#"><img src="img/payment-nav/visa.png" width="27" height="17" alt="Visa"></a></li>
+						<li><a href="#"><img src="img/payment-nav/amex.png" width="16" height="17" alt="AmEx"></a></li>
+						<li><a href="#"><img src="img/payment-nav/paypal.png" width="43" height="17" alt="PayPal"></a></li>
+					</ul>
+					<!--/ payment nav -->
+				</div>
+				</div>
+				</div>
+				
+			</footer>
+</section>
+<script src="js/jquery.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="bs3/js/bootstrap.min.js"></script>
+<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/easypiechart/jquery.easypiechart.js"></script>
+<script src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+
+<script src="js/bootstrap-switch.js"></script>
+
+<script type="text/javascript" src="js/fuelux/js/spinner.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-fileupload/bootstrap-fileupload.js"></script>
+<script type="text/javascript" src="js/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
+<script type="text/javascript" src="js/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+<script type="text/javascript" src="js/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="js/bootstrap-daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script type="text/javascript" src="js/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+<script type="text/javascript" src="js/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+<script type="text/javascript" src="js/jquery-multi-select/js/jquery.multi-select.js"></script>
+<script type="text/javascript" src="js/jquery-multi-select/js/jquery.quicksearch.js"></script>
+
+<script type="text/javascript" src="js/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+
+<script src="js/jquery-tags-input/jquery.tagsinput.js"></script>
+
+<script src="js/select2/select2.js"></script>
+<script src="js/select-init.js"></script>
+
+
+<!--common script init for all pages-->
+<script src="js/scripts.js"></script>
+
+<script src="js/toggle-init.js"></script>
+
+<script src="js/advanced-form.js"></script>
+<!--Easy Pie Chart-->
+<script src="js/easypiechart/jquery.easypiechart.js"></script>
+<!--Sparkline Chart-->
+<script src="js/sparkline/jquery.sparkline.js"></script>
+<!--jQuery Flot Chart-->
+<script src="js/flot-chart/jquery.flot.js"></script>
+<script src="js/flot-chart/jquery.flot.tooltip.min.js"></script>
+<script src="js/flot-chart/jquery.flot.resize.js"></script>
+<script src="js/flot-chart/jquery.flot.pie.resize.js"></script>
+
+
+
+ </body>
+ </html>

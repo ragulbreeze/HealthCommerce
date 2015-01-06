@@ -1,0 +1,26 @@
+section.wrapper{background-color:#1fb5ad;}
+nav.navbar.navbar-inverse { background-color:#1fb5ad;border:none;}
+ul.top-menu{width:35%;}
+.top-nav ul.top-menu li a{font-size:13px;color:#404040;}
+section.wrapper{margin:0;padding:0;}
+nav.navbar{border-radius:0;}
+nav.navbar.navbar-inverse {margin-bottom:0;}
+ul.nav.navbar-nav li a{font-size:17px;color:#fff;}
+div.collapse.navbar-collapse.navbar-ex1-collapse ul.nav.navbar-nav li.active a{background-color:#fff;color:#000;}
+ul.nav.navbar-nav li a:hover{background-color:#fff;color:#000;}
+ul.dropdown-menu.container li.col-md-4 ul li a{color:#000;}
+ul.dropdown-menu.container li.col-md-4 ul li a:hover{background-color:#000;color:#fff;}
+.navbar-inverse button.navbar-toggle{border-color:#fff;}
+.navbar-inverse button.navbar-toggle:hover{background-color:#1fb5ad;border-color:#fff;}
+div.collapse.navbar-collapse.navbar-ex1-collapse ul.nav.pull-right.top-menu{width:15%;}
+div.collapse.navbar-collapse.navbar-ex1-collapse ul.nav.pull-right.top-menu li{margin-top:5%;}
+input.form-control.search{cursor:pointer;}
+section#main-content{margin:0px;margin-top:-5px;}
+#ecom-banner{background:url("../images/wrapper-bge.jpg");background-size:100% 100%;height:400px;}
+section#main-content div.col-md-4 img{padding-top:15px;cursor:pointer;padding-bottom:15px;}
+div#ecom-banner.row{margin:0;}
+section.wrapper{background-color:#f1f2f7;}
+section.wrapper div.row{margin:0;}
+div.container h3{color:#000;}
+ul.media-filter li.active a{background-color:#1fb5ad;color:#fff;}
+button.btn.btn-info{margin-left:7px;margin-top:15px;}
